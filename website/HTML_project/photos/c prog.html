@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>My C program</title>
+	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"> 
+	<style>
+	h1{
+	font-family: 'Italianno', cursive;
+	font-size:45px;
+	}
+	</style>
+</head>
+<body bgcolor="#ef8478">
+<pre>
+<hr size="10" color="white"><h1 align="center">My C program</h1><hr size="10" color="white">
+
+
+  Following program is calculate all the number of notes 
+	for exampal:-we entered 4535
+				then out put is
+				2000 :2 note
+				500 :1 note
+				200 :0 note
+				50 :0 note
+				20 :1 note
+				10 :1 note
+				5 :1 note
+				2 :0 note
+				1 :0 note
+
+      
+<hr size="10" color="white">
+
+
+#include&ltstdio.h&gt
+#include&ltconio.h&gt
+
+void main()
+{
+	int amount,i;
+	int notes[10]={2000,500,200,100,50,20,10,5,2,1};
+	int nrs[10]={};
+	
+	printf(<q>enter your amount=</q>);
+	scanf(<q>%d</q>,&amount);
+	
+	for(i=0;i<10;i++)
+	{
+		if(amount>=notes[i])
+		{
+			nrs[i]=amount/note[i];
+			amount=amount-note[i]*nrs[i];
+			printf(<q>%d :%d</q>,note[i],nrs[i]);
+		}
+	}
+return 0;
+}
+
+
+<hr size="10" color="white">
+
+
+Output
+
+	enter your amount=6786
+	2000 :3 500 :1 200 :1 50 :1 20 :1 10 :1 5 :1 1 :1
+
+
+                     Thank you
+</pre>
+</body>
+</html>					 
